@@ -5,21 +5,21 @@
 class DailyJournal < Formula
   desc "Terminal journal with one markdown file per day, kept in git"
   homepage "https://github.com/nicolas-morisseau/daily-journal"
-  version "1.1.0"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nicolas-morisseau/daily-journal/releases/download/1.1.0/daily-journal_1.1.0_darwin_amd64.tar.gz"
-      sha256 "12b6d1a720f505aa0d8c419fc5000e940eb2c09f6688a27d83c5ceac24513627"
+      url "https://github.com/nicolas-morisseau/daily-journal/releases/download/1.0.0/daily-journal_1.0.0_darwin_amd64.tar.gz"
+      sha256 "bfaea7a7cb8244f666235949b841179942b86e0641af4e601edf4f855103bbb5"
 
       define_method(:install) do
         bin.install "journal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nicolas-morisseau/daily-journal/releases/download/1.1.0/daily-journal_1.1.0_darwin_arm64.tar.gz"
-      sha256 "7b142316970aa2916ff2d61b9529cd052c7102ed2c24168bd4836d73c1ea0922"
+      url "https://github.com/nicolas-morisseau/daily-journal/releases/download/1.0.0/daily-journal_1.0.0_darwin_arm64.tar.gz"
+      sha256 "86421cf64f5f7f6ad09542a63d1b8cce13f92908bf932e5f72f993cce98b7cde"
 
       define_method(:install) do
         bin.install "journal"
@@ -29,15 +29,15 @@ class DailyJournal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nicolas-morisseau/daily-journal/releases/download/1.1.0/daily-journal_1.1.0_linux_amd64.tar.gz"
-      sha256 "d38b6f30bd94439bfc62d40b600fc71859b7a086bebd2fc94730922be08904e7"
+      url "https://github.com/nicolas-morisseau/daily-journal/releases/download/1.0.0/daily-journal_1.0.0_linux_amd64.tar.gz"
+      sha256 "2cbdf225b9c8b0881579538d3625abe5a4119f5a0ab1b5df98e0adcf77e08599"
       define_method(:install) do
         bin.install "journal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nicolas-morisseau/daily-journal/releases/download/1.1.0/daily-journal_1.1.0_linux_arm64.tar.gz"
-      sha256 "dd953736a2d49fcdfe7b62b33736272d03767e9a8566355ef94b7f5c78d90a04"
+      url "https://github.com/nicolas-morisseau/daily-journal/releases/download/1.0.0/daily-journal_1.0.0_linux_arm64.tar.gz"
+      sha256 "38986ae8eb93a1e2d876705ad6c216ed834850aa3e273ce162fc195f0a3055ea"
       define_method(:install) do
         bin.install "journal"
       end
